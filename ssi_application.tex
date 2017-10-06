@@ -7,6 +7,7 @@
 \usepackage{standalone}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{svg}
 
 \definecolor{lightblue}{RGB}{124,190,255}
 \definecolor{darkgreen}{RGB}{24,145,0}
@@ -43,21 +44,22 @@
       \begin{itemize}
         \setlength\itemsep{3em}
         \item Welsh language teaching
-        \item Python, \LaTeX, version control
-        \item Translation of technical resources
+        \item Python, \LaTeX, version control, TDD
+        \item Technical translation
       \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{center}
-        \resizebox {\columnwidth} {!} {
+        \begin{center}
+          \includegraphics[width=0.6\textwidth]{cflogo}
+        \end{center}
+        \vspace{7mm}
+        \resizebox {0.85\columnwidth}{!}{
           \begin{tikzpicture}
             \draw[fill=colegmelyn, draw=none] (0, 0) rectangle (18, 10);
             \node at (9, 5) {\includegraphics[width=2.5\textwidth]{CCCDu}};
           \end{tikzpicture}
         }
-        \begin{center}
-          \includegraphics[width=0.6\textwidth]{cflogo}
-        \end{center}
       \end{center}
     \end{column}
   \end{columns}
@@ -65,6 +67,8 @@
 
 \begin{frame}
 Photo of me in community
+\\
+\textcolor{darkorange}{\url{www.geraintianpalmer.org.uk} $\quad$ \href{https://twitter.com/GeraintPalmer}{@GeraintPalmer}}
 \end{frame}
 
 \begin{frame}
@@ -75,13 +79,31 @@ Photo of me in community
 \end{frame}
 
 \begin{frame}
-  \begin{itemize}
-    \setlength\itemsep{3em}
-    \item OR60 - Annual conference of the Operational Research Society
-    \item The Operational Research Society's biannual Simulation Workshop
-    \item Coleg Cymraeg Cenedlaethol's multi-disciplinary conferences
-    \item Continue to blog bilingually about software and good practices
-  \end{itemize}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{center}
+          \includegraphics[width=\textwidth]{theorsociety}
+          \textit{Annual conference of the OR Society.}
+          \textit{Biannual simulation workshop.}
+        \end{center}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{center}
+        \resizebox {\columnwidth} {!} {
+          \begin{tikzpicture}
+            \draw[fill=colegmelyn, draw=none] (0, 0) rectangle (18, 10);
+            \node at (9, 5) {\includegraphics[width=3\textwidth]{CCCDu}};
+          \end{tikzpicture}
+        }
+        \textit{Multi-disciplinary conferences.}
+      \end{center}
+    \end{column}
+  \end{columns}
+  \vspace{7mm}
+  \begin{center}
+    \includegraphics[width=0.2\textwidth]{cy} \includegraphics[width=0.2\textwidth]{gb}\footnotemark
+  \end{center}
+  \footnotetext[1]{\tiny{Thanks to Twemoji.}}
 \end{frame}
 
 \end{document}
