@@ -6,6 +6,10 @@
 \usepackage{iwona}
 \usepackage{standalone}
 \usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes,snakes}
 \usepackage{hyperref}
 \usepackage{svg}
 
@@ -31,7 +35,20 @@
       \begin{center}
         Operational Research\\
         \vspace{10mm}
-        Simulation, Stochastic Modelling, Queues\\
+        \resizebox{\columnwidth}{!}{
+        \begin{tikzpicture}
+          \draw (0, 0) -- (8, 0);
+          \draw (8, 0) -- (8, 3);
+          \draw (0, 3) -- (8, 3);
+          \draw (4, 0) -- (4, 3);
+          \draw (5, 0) -- (5, 3);
+          \draw (6, 0) -- (6, 3);
+          \draw (7, 0) -- (7, 3);
+          \draw (10, 1.5) circle (1.5);
+          \draw[thick, -triangle 90] (11.5, 1.5) -- (15, 1.5);
+          \draw[thick, -triangle 90] (-3, 1.5) -- (0, 1.5);
+        \end{tikzpicture}
+        }\\
         \vspace{10mm}
         Healthcare Systems\\
       \end{center}
@@ -43,11 +60,9 @@
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{center}
-        \includegraphics[width=0.4\textwidth]{cy}\\
-        \vspace{10mm}
-        Software\\
-        \vspace{10mm}
-        Technical translation\\
+        \includegraphics[width=0.5\textwidth]{cy}\\
+        \vspace{7mm}
+        \includegraphics[width=0.5\textwidth]{comp}\\
       \end{center}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -56,7 +71,7 @@
           \includegraphics[width=0.6\textwidth]{cflogo}
         \end{center}
         \vspace{7mm}
-        \resizebox {0.85\columnwidth}{!}{
+        \resizebox{0.85\columnwidth}{!}{
           \begin{tikzpicture}
             \draw[fill=colegmelyn, draw=none] (0, 0) rectangle (18, 10);
             \node at (9, 5) {\includegraphics[width=2.5\textwidth]{CCCDu}};
@@ -65,13 +80,14 @@
       \end{center}
     \end{column}
   \end{columns}
+  \footnotetext[1]{\tiny{Emojis thanks to Twemoji.}}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\includegraphics[width=\textwidth]{workshop}
+\includegraphics[width=\textwidth]{swordspydiff}
 \end{center}
-\vspace{10mm}
+% \vspace{10mm}
 \textcolor{darkorange}{\url{www.geraintianpalmer.org.uk} $\quad \quad$ \href{https://twitter.com/GeraintPalmer}{@GeraintPalmer}}
 \end{frame}
 
@@ -103,11 +119,6 @@
       \end{center}
     \end{column}
   \end{columns}
-  \vspace{7mm}
-  \begin{center}
-    \includegraphics[width=0.2\textwidth]{cy} \includegraphics[width=0.2\textwidth]{gb}\footnotemark
-  \end{center}
-  \footnotetext[1]{\tiny{Thanks to Twemoji.}}
 \end{frame}
 
 \end{document}
